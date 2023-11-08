@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
         segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
         sans-serif;
@@ -13,7 +13,7 @@ body {
 
 .game-center {
     width: 100%;
-    height: 100%;
+    height: 90vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -127,4 +127,18 @@ body {
 .green .bubble-text,
 .new-bubble .bubble-text {
     font-size: 1.5rem;
+}
+
+:root {
+    --x-speed: 10s;
+}
+
+.bubble {
+    animation: wiggle var(--x-speed) linear infinite alternate;
+}
+
+@keyframes wiggle {
+    100% {
+        transform: translateX(calc(100vw - var(--width)));
+    }
 }
