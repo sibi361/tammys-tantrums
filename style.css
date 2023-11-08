@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+        segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+        sans-serif;
+}
+
+.game-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble {
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+
+.red {
+    width: 650px;
+    height: 650px;
+    background-color: #fb27b0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.blue {
+    width: 350px;
+    height: 350px;
+    background-color: #4982ee;
+    transform: translate(120%, 35%);
+    opacity: 1;
+}
+
+.green {
+    width: 300px;
+    height: 300px;
+    background-color: #4ecc2b;
+    transform: translate(100%, 135%);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.purple {
+    width: 400px;
+    height: 400px;
+    background-color: #7e00f5;
+    transform: translate(-85%, 75%);
+    opacity: 0.6;
+}
+
+.yellow {
+    width: 400px;
+    height: 400px;
+    background-color: #fec00a;
+    transform: translate(-95%, -80%);
+}
+
+.bubble-num {
+    font-size: 11rem;
+    margin: 0;
+    padding: 0;
+    line-height: 8rem;
+    padding-top: 4rem;
+}
+
+.bubble-text {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.blue > .bubble-num,
+.green > .bubble-num {
+    font-size: 8rem;
+    line-height: 7rem;
+}
