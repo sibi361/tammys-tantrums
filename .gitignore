@@ -20,3 +20,5 @@ pnpm-debug.log*
 # setting folders
 .idea/
 .vscode/
+.vercel
+.env*.local
